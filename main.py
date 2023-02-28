@@ -20,8 +20,7 @@ class Yellow(QWidget):
         super().paintEvent(event)
         if self.should_paint_circle:
             painter = QPainter(self)
-            painter.setPen(QPen(Qt.yellow, 1, Qt.SolidLine))
-            painter.setBrush(QBrush(Qt.yellow, Qt.SolidPattern))
+            painter.setPen(QPen(Qt.yellow, 8, Qt.SolidLine))
             painter.drawEllipse(40, 40, self.radius, self.radius)
 
     def nnn(self):
